@@ -28,8 +28,12 @@ go mod init example/hello
 ### 実行
 
 ```
-$ docker run --rm -it -v $PWD:/usr/src/app -u $(id -u):$(id -g) golang:1.21 bash
+$ docker run --rm -it -v $PWD:/usr/src/app golang:1.21 bash
 $ cd /usr/src/app
 $ go run .
 Hello, World!
 ```
+
+## プロジェクトの初期化
+
+該当のフォルダに移動して `init.sh <project name>` を実行
