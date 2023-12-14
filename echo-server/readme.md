@@ -61,3 +61,21 @@ Sec-Fetch-Mode: no-cors
 Sec-Fetch-Site: same-origin
 User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
 ```
+
+## curlでのurl encode送信
+
+```
+curl --http1.0 --get --data-urlencode "search word" http://localhost:18888
+```
+
+## curlで通信内容確認
+
+```
+curl -v --http1.0 http://localhost:18888/greeting
+```
+
+## curlでヘッダーを送信
+
+```
+curl -H "X-Test: Hello" http://localhost:18888
+```
